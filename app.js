@@ -23,6 +23,9 @@ console.clear();
 //para instalar yargs: npm i yargs
 //https://www.npmjs.com/package/yargs
 
+//con esto se instalaran todos los modulos que se encuentran en el archivo json
+//npm install
+
 
 crearArchivo(argv.b, argv.l, argv.h)
     .then(nombreArchivo => console.log('\n', nombreArchivo.rainbow, 'creado'))
