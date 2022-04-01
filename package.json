@@ -1,0 +1,24 @@
+{
+  "name": "02-bases-node",
+  "version": "0.0.1",
+  "description": "tabla de multiplicar en un archivo de texto",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base3": "node app --base=3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-00/Node-bases2.git"
+  },
+  "author": "Paulo Joao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joao-00/Node-bases2/issues"
+  },
+  "homepage": "https://github.com/Joao-00/Node-bases2#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.4.0"
+  }
+}
