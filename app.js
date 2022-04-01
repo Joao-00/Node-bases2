@@ -26,6 +26,7 @@ console.clear();
 //con esto se instalaran todos los modulos que se encuentran en el archivo json
 //npm install
 
+//para reconstruir en el ultimo commit: git checkout -- .
 
 crearArchivo(argv.b, argv.l, argv.h)
     .then(nombreArchivo => console.log('\n', nombreArchivo.rainbow, 'creado'))
