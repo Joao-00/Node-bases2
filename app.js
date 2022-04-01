@@ -1,14 +1,10 @@
 
 const { crearArchivo } = require('./helpers/multiplicar')
-const argv = require('yargs').argv;
+const argv = require('./config/yargs');
+const colors =require('colors');
 
 
 console.clear();
-
-console.log(process.argv);
-console.log(argv);
-
-console.log('base: yargs', argv.base);
 
 // con el process.argv podemos ver de donde vienen los argumentos de consola
 // const[ , , arg3 = 'base=5' ] = process.argv;
@@ -28,6 +24,6 @@ console.log('base: yargs', argv.base);
 //https://www.npmjs.com/package/yargs
 
 
-// crearArchivo(base)
-//     .then(nombreArchivo => console.log(nombreArchivo, 'creado'))
-//     .catch(err => console.log(err));
+crearArchivo(argv.b, argv.l)
+    .then(nombreArchivo => console.log('\n', nombreArchivo.rainbow, 'creado'))
+    .catch(err => console.log(err));
