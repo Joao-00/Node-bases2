@@ -1,7 +1,7 @@
 
 const { crearArchivo } = require('./helpers/multiplicar')
 const argv = require('./config/yargs');
-const colors =require('colors');
+require('colors');
 
 
 console.clear();
@@ -24,6 +24,6 @@ console.clear();
 //https://www.npmjs.com/package/yargs
 
 
-crearArchivo(argv.b, argv.l)
+crearArchivo(argv.b, argv.l, argv.h)
     .then(nombreArchivo => console.log('\n', nombreArchivo.rainbow, 'creado'))
     .catch(err => console.log(err));
