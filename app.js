@@ -28,6 +28,8 @@ console.clear();
 
 //para reconstruir en el ultimo commit: git checkout -- .
 
+//Recuerdar ejecutar el npm install  para reconstruir los módulos de node en caso de que quieran usar este ejercicio.
+
 crearArchivo(argv.b, argv.l, argv.h)
     .then(nombreArchivo => console.log('\n', nombreArchivo.rainbow, 'creado'))
     .catch(err => console.log(err));
